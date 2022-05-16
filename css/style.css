@@ -1,0 +1,488 @@
+/*common css start*/
+html{float: left;width: 100%;}
+@font-face {font-family:sh-pincher-reg;src: url(../fonts/sh-pincher-reg.otf);}
+@font-face {font-family:provicali;src: url(../fonts/provicali.otf);}
+body{float: left;width: 100%;font-family:sh-pincher-reg;overflow-x: hidden;}
+h1, h2, h3, h4, h5, h6, ul{margin: 0;}
+a{color: white;text-decoration: none;}
+a:hover, a:focus, a:active{text-decoration: none;}
+.blue{color: #242c41;}
+.green{color: #31bd83;}
+.padd_left_0{padding-left:0;}
+.padd_right_0{padding-right:0;}
+::-webkit-scrollbar {width: 5px;}
+::-webkit-scrollbar-track {background: #f1f1f1;}
+::-webkit-scrollbar-thumb {background: #ccc;border-radius: 5px}
+::-webkit-scrollbar-thumb:hover {background: #242c41;transition: all 0.3s;}
+
+ 
+.marit_page {float: left;width: 100%;}
+.banner_bg {float: left;width: 100%;position: relative;background: url("../images/banner.png");min-height:100vh;background-size: 100% 100%;background-repeat: no-repeat;}
+.main_header {float: left;width: 100%;}
+
+/*header start*/
+.main_header .navbar-inverse{background-color: transparent;border: unset;}
+.main_header .navbar-nav{width: 100%;text-align: center;margin: 40px 0 0;}
+.main_header .navbar-nav li{float: none;display: inline-block;}
+.main_header .navbar-header{display: none;}
+.main_header .navbar-nav li a{color: #fff;letter-spacing: 1px;padding: 10px 30px;position: relative;margin: 0 5px;text-transform: uppercase;font-family: arial;}
+.main_header .navbar-nav li:last-child a{color: #8cc63e;}
+.main_header .navbar-nav li.active a, .qiz_header .navbar-nav li.active a:hover{background:transparent;color: white;}
+.main_header .navbar-nav li:after {transition:all 0.5s;position:absolute;content:"";left:20%;width:30%;font-size: 12px;;background:#8cc63e;height:1px;bottom: 10px;visibility: hidden;}
+.main_header .navbar-nav li:hover::after{visibility: visible;width: 60%;transition: all 0.5s;}
+.main_header .navbar-nav li:last-child:hover::after {background: unset;visibility: hidden;}
+.main_header .navbar-nav li.active:after{visibility: visible;transition: all 0.5s;position: absolute;content: "";left:30%;width: 30%;background:#8cc63e;height:1px;bottom: 10px;right: 25px;}
+.main_header .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{background: transparent;color: white;}
+.main_header .navbar-nav li:nth-child(3)::after {background: transparent;}
+.main_header nav li a img{width: 55px;}
+/*header Over*/
+
+
+/*banner start*/
+.banner {float: left;width: 100%;position: relative;}
+.banner_text {float: left;width: 100%;display: table;min-height:600px;}
+.banner_middle_text {float: none;display: table-cell;vertical-align: middle;text-align: center;}
+.banner_middle_text img {width:80%;}
+.banner_middle_text h4 {color: white;font-size:30px;}
+.banner_middle_text a {margin:50px 0 0;font-family: arial;float: none;display: inline-block;background:#8cc63e;width: auto;padding:7px 30px;border-radius: 20px;letter-spacing: 1px;box-shadow: 2px 2px 59px #425a22;}
+.banner_middle_text a:hover {transform: scale(1.1);transition: all ease-in-out 0.5s;color: white;}
+.scroll_down {float: left;width: auto;position: absolute;bottom:40px;right:40px;}
+.scroll_down h3 {color: #babcb8;writing-mode: vertical-lr;text-transform: uppercase;font-family: arial;font-size: 13px;font-weight: 600;letter-spacing: 1px;position: relative;}
+.scroll_down h3:before {position: absolute;content: "";left:6px;background: #babcb8;height: 90px;width: 2px;top:-100px;}
+/*Banner Over*/
+
+/*Ecosystem start*/
+.testimonials {float: left;width: 100%;padding: 80px 0;background: url("../images/ecosystem.png");background-repeat: no-repeat;background-size: 100% 100%;}
+.ecosystem {float: left;width: 100%;position: relative;}
+.ecosystem img.eco_logo {width: 50px;margin: 0 auto;display: block;}
+.gtco-testimonials h2 {font-size:76px;text-align: center;color: #8cc63e;margin-bottom:5px;font-weight: 600;text-transform: uppercase;letter-spacing: 4px;}
+.ecosystem p{margin: 0 auto 20px;color: white;font-size:30px;text-align: center;}
+.gtco-testimonials .owl-stage-outer {padding:50px 0 0;}
+.ecosystem .gtco-testimonials .owl-nav.disabled {display: block;text-align: center;}
+.ecosystem .gtco-testimonials .owl-nav.disabled span {color: #8cc63e;font-size: 40px;}
+.gtco-testimonials .card {margin: 0 10px;padding: 0 10px;}
+.gtco-testimonials .card h5 {color:#8cc63e;font-size:48px;line-height: 1.3;float: left;}
+.gtco-testimonials .card h5 span {font-size: 18px;color: #666666;}
+.gtco-testimonials .card p {font-size: 14px;color: #555;float: left;width: 100%;text-align: left;margin: 10px 0 0;}
+.gtco-testimonials .active {opacity: 0.5;transition: all 0.3s;}
+.gtco-testimonials .center {opacity: 1;}
+.gtco-testimonials .center h5 {font-size: 35px;}
+.gtco-testimonials .center h5 span {font-size: 20px;}
+.ecosystem .gtco-testimonials .center .card-img-top {max-width: 100%;width: 40px;}
+.ecosystem .owl-carousel .owl-item img {float: left;width: 50px;margin-right: 15px;}
+
+@media (max-width: 767px) 
+{
+  .gtco-testimonials {margin-top: 20px;}
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {outline: 0;}
+.owl-carousel button.owl-dot {outline: 0;}
+.readmore {float: left;width: 100%;text-align: center;margin: 20px 0;}
+.readmore a {background: #8cc63e;padding: 12px 40px;border-radius: 50px;font-size: 14px;font-family: arial;}
+.scroll_down.test {float: left;width: 100%;position: absolute;bottom: -50px;right: 0;left: 0;text-align: center;}
+.scroll_down.test h3 {writing-mode: unset;font-size: 11px;}
+.scroll_down.test h3:before {background: unset;}
+/*.scroll_down.test h3:before {background: unset;content: ">";writing-mode: tb;left: 45%;bottom: 0;top: -38px;}*/
+/*.scroll_down.test h3:after {background: unset;content: ">";writing-mode: tb;right: 45%;bottom: 0;top: -38px;}*/
+/*Ecosystem Over*/
+
+/*roadmap section start*/
+.roadmap {float: left;width: 100%;position: relative;background: url("../images/roadmap.png");padding:40px 0;background-repeat: no-repeat;background-size: 100% 100%;min-height: 700px;}
+.marit_roadmap {float: left;width: 100%;}
+.roadmap_heading {float: left;width: 100%;}
+.roadmap_heading h4 {color: white;font-size:30px;text-transform: uppercase;}
+.roadmap_heading h2 {color: #8cc63e;text-transform: uppercase;font-size: 90px;font-weight: bold;}
+
+.about_offer {float: left;padding:20% 0 0;width: 100%;}
+.about_offer > ul {float: left;margin: 0;padding: 0;width: 100%;}
+.about_offer > ul > li {border-top:7px solid #8cc63e;display: inline-block;float: left;list-style: outside none none;padding: 12px 28px;position: relative;text-align: center;width: 33.3%;}
+.about_offer > ul > li::before {background: rgba(0, 0, 0, 0) url("../images/r2.png") no-repeat scroll 0 0;content: "";float: left;height:100px;left:41%;position: absolute;right: 0;top: -50px;width: 100%;background-size: contain;}
+.about_offer > ul > li:last-child::before {right:-70%;left: auto;background: rgba(0, 0, 0, 0) url(../images/r3.png) no-repeat scroll 0 0;background-size: contain;top: -60px;}
+.about_offer > ul > li:first-child::before {left:10%;top: -60px;background: url("../images/r1.png");background-repeat: no-repeat;background-size: contain;}
+.about_offer .map_text {float: left;color: #8cc63e;}
+.about_offer ul li:nth-child(2n+1) .map_text {left:-120px;position: absolute;right: 0;text-align: center;top:-220px;width: 100%;}
+.about_offer .map_text h4 {font-size: 30px;margin: 0 0 10px;}
+.about_offer .map_text ul {list-style: none;margin: 0;padding: 0;color: white;}
+.about_offer .map_text ul li {font-size: 20px;}
+.about_offer ul li:last-child .map_text {left:110px;}
+/*.about_offer ul li:nth-child(2n+1) h4::after {border-left: 1px solid #cdcdcd;content: "";height: 20px;left: 49%;position: absolute;right: 0;text-align: center;top: 100%;width: 100%;}*/
+.about_offer ul li:nth-child(2n) .map_text {left: 10px;position: absolute;right: 0;text-align: center;top:50px;width: 100%;}
+/*.about_offer ul li:nth-child(2n) h4::after {border-left: 1px solid #cdcdcd;content: "";height: 20px;left: 49%;position: absolute;right: 0;text-align:center;top: -20px;width: 100%;}*/
+
+.roadmap .scroll_down.test{bottom: 0;}
+/*roadmap section Over*/
+
+
+/*Footer section start*/
+.mr_footer {float: left;width: 100%;background: #0e0e0e;padding: 50px 0;}
+.footer_texts {float: left;width: 100%;}
+.f_card {float: left;width: 100%;}
+.f_logo {float: left;width: 100%;}
+.f_logo img {width: 40px;float: left;margin: 0 10px 0 0;}
+.f_card h4 {float: left;color: white;letter-spacing: 1px;font-size:18px;margin: 10px 0 0;font-family:provicali;}
+.f_card p {float: left;width: 100%;margin: 10px 0 0;color: white;line-height: 24px;font-family: arial;}
+.f_card ul {float: left;width: 100%;padding: 0;margin: 10px 0 0;}
+.f_card ul li {list-style: none;float: left;width: 100%;line-height: 24px;font-family: arial;}
+.newsletter {float: left;width: 100%;margin: 10px 0 0;}
+.newsletter input {box-shadow: unset;border: unset;border-radius: unset;background: #1f1f1f;font-family: arial;}
+.newsletter input::placeholder {color: #3c3c3c;font-size: 11px;}
+.newsletter a {background: #8cc63e;padding: 5px 30px;display: table;margin: 15px auto 0;border-radius: 5px;font-size: 12px;font-family: arial;}
+.copyright{float: left;width: 100%;margin: 40px 0 0;}
+.copyright p {margin: 0;float: left;width: 100%;font-size: 11px;color: white;padding-left: 15px;font-family: arial;}
+
+/*custom zb*/
+.gtco-testimonials .owl-carousel {
+  margin-bottom: 30px;
+  position: relative;
+}
+.gtco-testimonials .owl-carousel .owl-item.active.center .slider-card {
+  transform: scale(1.15);
+  opacity: 1 !important;
+  background: transparent; /* fallback for old browsers */
+  color: #fff;
+}
+.gtco-testimonials .slider-card {
+  background: #fff;
+  padding: 0px 0px;
+  margin: 50px 15px 90px 15px;
+  border-radius: 5px;
+  box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+  transform: scale(0.9);
+  opacity: 0.5;
+  transition: all 0.3s;  
+}
+
+.shadow-1{
+  padding: 0px 0px !important;
+  margin: 0 !important;
+  border-radius: 5px;
+  box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+  transform: scale(0.9) !important;
+  opacity: 0.5 !important;
+  transition: all 0.3s !important;
+}
+.shadow-2{
+  padding: 0px 0px !important;
+  margin: 0 !important;
+  border-radius: 5px;
+  box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+  transform: scale(0.7) !important;
+  opacity: 0.190 !important;
+  transition: all 0.3s !important;
+}
+
+.gtco-testimonials .owl-carousel .owl-item {
+  min-height: 500px !important;
+}
+.scroll_down{
+  cursor: pointer;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #8cc63e;
+  color: white;
+  cursor: pointer;
+  padding: 18px 20px;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: #ffffff;
+  color: #8cc63e;
+}
+
+.testimonials{
+  /*background-image: radial-gradient(circle, transparent, #000000);*/
+  background: radial-gradient(ellipse at center, rgb(-2 0 0 / 100%) 20%, rgb(0 0 0) 32%, rgba(0, 0, 0, 1) 71%, rgba(0, 0, 0, 1) 100%);
+}
+.card-text{
+  color:#FFFFFF !important;
+}
+
+.right-arrow::before {background: rgba(0, 0, 0, 0) url("../images/Right_Arrow.png") no-repeat scroll 0 0;content: "";right:35%;float: left;height:40px; position: absolute;width: 30px;background-size: contain;}
+.left-arrow::before {background: rgba(0, 0, 0, 0) url("../images/Left_Arrow.png") no-repeat scroll 0 0;content: "";left:35%;float: left;height:40px; position: absolute;width: 30px;background-size: contain;}
+
+#contact a:hover {
+  color: rgb(30, 219, 93) !important;
+  margin-left: 10px;
+  transition: 1s;
+}
+#contact .fa{
+  font-size: 19px;
+}
+#ecosystem .readmore{
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin: 5% 0;
+}
+.down_arrow{width:1%; height:auto;}
+
+/*our partners section start*/
+.our_partners {float: left;width: 100%;position: relative;background: url("../images/PARTNERS.jpg");padding:40px 0;background-repeat: no-repeat;background-size: 100% 100%;min-height: 700px;}
+/*our partners section start over*/
+
+@media screen and (min-width:320px) and (max-width:480px){
+  .gtco-testimonials .owl-carousel .owl-item {
+    padding:0 30px !important;
+  }
+  .gtco-testimonials .owl-carousel .owl-item {
+    min-height: 400px !important;
+  }
+  .banner_bg{
+    min-height:65vh !important;
+  }
+  .gtco-testimonials .owl-stage-outer{
+    padding: 0 !important;
+  }
+  .newsletter a{
+    margin:10px 0 !important;
+  }
+  .our-partner{
+    width: 100%;
+    background: url(../images/PARTNERS.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .our-partner h2{
+    padding-top: 0px !important;
+    padding-bottom: 0px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  /* .solidity-img{
+    padding-left: 0px;
+    padding-right: 0px;
+  } */
+  .solidity1, .solidity2{
+    margin:10% 0 !important;
+  }
+  .down_arrow{width:5% !important;}
+}
+@media screen and (min-width:481px) and (max-width:767px){
+  .gtco-testimonials .owl-carousel .owl-item {
+    padding:0 35px !important;
+  }
+  .marit_page{
+    overflow:hidden;
+  }
+  .gtco-testimonials .owl-carousel .owl-item {
+    min-height: 450px !important;
+  }
+  .about_offer ul li:nth-child(2n+1) .map_text{
+    left: -30px !important;
+  }
+  .about_offer ul li:last-child .map_text{
+    left: 0 !important;
+  }
+  .about_offer > ul > li:first-child::before{
+    left: 25% !important;
+  } 
+  .about_offer > ul > li:last-child::before{
+    right: -35% !important;
+  }
+  .banner_bg{
+    min-height:75vh !important;
+  }
+  .gtco-testimonials .owl-stage-outer{
+    padding: 0 !important;
+  }
+  .newsletter a{
+    margin:10px 0 !important;
+  }
+  .our-partner{
+    width: 100%;
+    background: url(../images/PARTNERS.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .our-partner h2{
+    padding-top: 0px !important;
+    padding-bottom: 0px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  /* .solidity-img{
+    padding-left: 0px;
+    padding-right: 0px;
+  } */
+  .solidity1, .solidity2{
+    margin:5% 0 !important;
+  }
+  .down_arrow{width:4% !important;}
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+  .gtco-testimonials .owl-carousel .owl-item {
+    padding:0 45px !important;
+  }
+  .marit_page{
+    overflow:hidden;
+  }
+  .gtco-testimonials .owl-carousel .owl-item {
+    min-height: 480px !important;
+  }  
+  .about_offer ul li:nth-child(2n+1) .map_text{
+    left: -30px !important;
+  }
+  .about_offer ul li:last-child .map_text{
+    left: 0 !important;
+  }
+  .about_offer > ul > li:first-child::before{
+    left: 25% !important;
+  } 
+  .about_offer > ul > li:last-child::before{
+    right: -35% !important;
+  }
+  .gtco-testimonials .owl-stage-outer{
+    padding: 0 !important;
+  }
+  .banner_bg{
+    min-height:75vh !important;
+  }
+  .down_arrow{width:3% !important;}
+}
+
+.roadmap_mobile{display: none;}
+
+@media screen and (max-width:767px){
+  .roadmap_desk{display: none;}
+  .roadmap_mobile{display: block;}
+  .roadmap_heading {float: left;width: 100%;}
+  .roadmap_heading h4 {color: white;font-size:30px;text-transform: uppercase;}
+  .roadmap_heading h2 {color: #8cc63e;text-transform: uppercase;font-size: 90px;font-weight: bold;}
+  
+  
+  
+  .phase{
+    border-left: 7px solid #8cc63e;
+    margin-left: 20%;
+    margin-top: 35%;
+  }
+  .phase img{
+    width: 15%;
+    //transform: rotate(90deg);
+    margin-left: -8%;
+  }
+  .phase1{
+    margin-left: 20%;
+    margin-top: -20%;
+  }
+  .phase1 h4{
+    color: #8cc63e;
+    font-size: 30px;
+  }
+  .phase1 p{
+    color: #ffffff;
+    font-size: 18px;
+  }
+  .phase_section2{
+    margin-top: 10%;
+  }
+  /*.phase_section2 img{
+    transform: rotate(270deg);
+  }*/
+  .phase_section3{
+    margin-top: 10%;
+  }
+  }
+
+  .our-partner{
+    /*width: 100%;
+    background: url(../images/PARTNERS.jpg) !important;
+    background-size: 100%;
+    padding-bottom: 50px;*/
+    background: url(../images/PARTNERS.jpg) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center;
+    float: left;
+    width: 100%;
+    position: relative;
+    padding: 40px 0;
+  }
+  .our-partner h2{
+    padding-bottom: 50px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  .solidity-img{
+    margin:0;
+    margin: 2% 0 !important;
+  }
+  /*.solidity-img{
+    padding-left: 400px;
+    padding-right: 100px;
+  } */
+  .solidity-img h3{
+    color: #ffffff;
+    font-weight: 700 !important;
+  }
+  .solidity-img p{
+    color: #ffffff;
+    font-size: 15px;
+  }
+  .our-partner-btn a{
+    margin-top: 0%;
+  }
+  .solidity1{
+    text-align: center;
+  }
+  .solidity2{
+    text-align: center;
+  }
+  .our-partner .banner_middle_text{
+    display: block !important;
+  }
+  .solidity1 img{
+    width: 100%;
+  }
+  .solidity2 img{
+    width: 100%;
+  }
+/*custom zb*/
+
+/*Media query start*/
+
+
+@media screen and (max-width:767px){
+
+.main_header .navbar-header{display: block;}
+.navbar-brand>img{width: 50px;}
+.main_header .navbar-nav li{float: left;display: block;width: 100%;text-align: left;}
+.main_header .navbar-nav li:nth-child(3) {display: none;}
+/*.main_header .navbar-nav li.active:after, .main_header .navbar-nav li:after{left: 10%;}*/
+.main_header .navbar-nav li.active:after{left:35px;width:45px;}
+  .main_header .navbar-nav li:hover::after{width: 95px;left: 35px;}
+
+.banner_text{min-height: 400px;}
+.banner_middle_text h4{font-size: 22px;}
+.scroll_down{bottom: 20px;right: 20px;}
+.scroll_down h3{font-size: 12px;}
+.scroll_down h3:before{height: 60px;top: -65px;}
+
+.gtco-testimonials h2, .roadmap_heading h2{font-size: 50px;}
+.roadmap_heading h4{font-size: 22px;}
+.ecosystem p{font-size: 18px;}
+
+.about_offer{padding: 75% 0 0;}
+.about_offer ul li:nth-child(2n+1) .map_text, .about_offer ul li:nth-child(2n) .map_text, .about_offer ul li:last-child .map_text{left: 0;}
+.about_offer > ul > li::before{height: 70px;top: -35px;width: 50%;left: 30%;}
+.about_offer > ul > li:last-child::before{right:5px;top: -50px;}
+.about_offer > ul > li:first-child::before{top: -50px;}
+.about_offer .map_text h4{font-size: 20px;}
+.about_offer .map_text ul li{font-size: 14px;}
+
+
+
+}
